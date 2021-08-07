@@ -7,8 +7,8 @@ enum GOLCell {
 impl std::fmt::Debug for GOLCell {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         f.write_str(match self {
-            GOLCell::Alive => "█",
-            GOLCell::Dead => " ",
+            GOLCell::Alive => "██",
+            GOLCell::Dead => "  ",
         })
     }
 }
